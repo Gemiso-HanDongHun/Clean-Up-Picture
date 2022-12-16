@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_picture"
+        layout="@layout/layout_toolbar"
+        android:background="@color/white" />
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:id="@+id/color_labels_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/color_name_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="은은"
+                android:textColor="#FF0000"/>
+
+            <TextView
+                android:id="@+id/color_hexa_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/color_rgb_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_height="wrap_content" android:layout_width="match_parent" android:background="?attr/colorOnPrimary" android:id="@+id/bottom_picture" app:menu="@menu/menu_bottom_picture" app:labelVisibilityMode="unlabeled" app:elevation="16dp" app:itemTextColor="@color/custom_color_bottom_nav" app:itemIconTint="?attr/colorOnBackground" android:layout_alignParentBottom="true"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_height="wrap_content" android:layout_width="match_parent" android:background="?attr/colorOnPrimary" android:id="@+id/bottom_trash_picture" app:menu="@menu/menu_bottom_trash_picture" app:labelVisibilityMode="unlabeled" app:elevation="16dp" app:itemTextColor="@color/custom_color_bottom_nav" app:itemIconTint="?attr/colorOnBackground" android:layout_alignParentBottom="true"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_height="wrap_content" android:layout_width="match_parent" android:background="?attr/colorOnPrimary" android:id="@+id/bottom_wc_picture" app:menu="@menu/menu_bottom_wcresult" app:labelVisibilityMode="unlabeled" app:elevation="16dp" app:itemTextColor="@color/custom_color_bottom_nav" app:itemIconTint="?attr/colorOnBackground" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

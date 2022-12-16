@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menuCreateAlbum"
+        android:title="@string/multi_create_album"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menuMultiDelete"
+        android:title="@string/delete"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menuAddAlbum"
+        android:title="@string/addAlbum"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuSlideshow"
+        android:title="@string/slideshow"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuHide"
+        android:title="@string/hide_photo"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menuGif"
+        android:title="@string/gif"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu_worldcup"
+        android:title="@string/worldcup"
+        app:showAsAction="never"/>
+</menu>

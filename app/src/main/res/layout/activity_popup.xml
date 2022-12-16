@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".activities.mainActivities.ScreenshotPopupActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/teal_200"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:textStyle="bold"
+        android:text="삭제"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="취소"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="스크린샷 간편 삭제 "
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="* 기간 설정 (30일)"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        android:text="* 주요 스크린샷 설정"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tbgCheckedButton="@+id/choice_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        app:tbgChildSpacing="10dp"
+
+        >
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/btnCategoryA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="이상"/>
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/btnCategoryB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="이내"/>
+
+
+   </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tbgCheckedButton="@+id/choice_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="190dp"
+        app:tbgChildSpacing="10dp"
+        >
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/btnCategoryC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="제외"/>
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/btnCategoryD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="포함"/>
+
+
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="237dp"
+        android:layout_marginTop="192dp"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="237dp"
+        android:layout_marginTop="102dp"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+
+    <!--    <Switch-->
+    <!--        android:id="@+id/btn_star"-->
+    <!--        android:layout_width="45dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginLeft="155dp"-->
+    <!--        android:layout_marginTop="80dp"-->
+    <!--        android:textOff="이상"-->
+    <!--        android:textOn="이내"-->
+    <!--        />-->
+
+    <!--    <Switch-->
+    <!--        android:id="@+id/btn_day"-->
+    <!--        android:layout_width="45dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginLeft="155dp"-->
+    <!--        android:layout_marginTop="138dp"-->
+    <!--        android:textOff="x"-->
+    <!--        android:textOn="o"-->
+    <!--        />-->
+
+</RelativeLayout>

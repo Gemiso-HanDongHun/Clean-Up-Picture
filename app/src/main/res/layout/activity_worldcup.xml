@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.mainActivities.WorldCUPActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:translationZ="90dp"
+        android:background="?attr/colorOnPrimary">
+
+        <ImageView
+            android:id="@+id/img_back_world_cup"
+            android:layout_width="0dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:src="@drawable/abc_ic_ab_back_material"
+            android:foregroundTint="@color/black"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:iconTint="?attr/colorOnBackground"/>
+
+        <ImageView
+            android:id="@+id/img_help"
+            android:layout_width="0dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_help"
+            android:foregroundTint="@color/black"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:iconTint="?attr/colorOnBackground"/>
+
+        <TextView
+            android:id="@+id/WC_play_textname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:text="사진 월드컵"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/WC_recycler_play"
+
+        android:layout_width="wrap_content"
+        android:layout_height="570dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/WC_recycler_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

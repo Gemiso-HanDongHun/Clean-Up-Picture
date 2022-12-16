@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General">
+        <SwitchPreference
+            android:key="nightMode"
+            android:title="@string/night_mode"
+            android:defaultValue="false"
+            android:summaryOn="@string/night_mode_activated"
+            android:summaryOff="@string/night_mode_deactivated"/>
+        <SwitchPreference
+            android:key="changeLanguage"
+            android:title="@string/languague"
+            android:defaultValue="false"
+            android:summaryOn="English"
+            android:summaryOff="Vietnamese"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:key="sourceCode"
+            android:title="@string/source_code">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Ashpex/SimpleGallery"/>
+        </Preference>
+
+        <Preference
+            android:key="contributors"
+            android:title="@string/contributors">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Ashpex/SimpleGallery"/>
+        </Preference>
+
+        <Preference
+            android:key="libraries"
+            android:title="@string/libraries">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Ashpex/SimpleGallery/blob/master/Included_libraries.md"/>
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

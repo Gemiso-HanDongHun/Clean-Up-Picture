@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuInfo"
+        android:title="@string/information"
+        android:icon="@drawable/ic_toolbar_info"
+        app:showAsAction="always"
+        android:iconTint="?attr/colorOnBackground"/>
+    <item android:id="@+id/menuAddAlbum"
+        android:title="@string/addAlbum"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menuAddSecret"
+        android:title="@string/hide_photo"
+        app:showAsAction="never"/>
+    <item android:id="@+id/setWallpaper"
+        android:title="@string/set_wallpaper"
+        app:showAsAction="never"/>
+    <item android:id="@+id/searchImage"
+        android:title="@string/search_results"
+        app:showAsAction="never"/>
+</menu>

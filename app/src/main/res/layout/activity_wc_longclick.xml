@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/wc_longclickview_round"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="600dp">
+
+
+        <ImageView
+            android:id="@+id/WC_longimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/anh1"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            >
+        </ImageView>
+
+</LinearLayout>
+

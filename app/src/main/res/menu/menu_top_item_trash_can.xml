@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/change_span_count"
+        android:title="@string/search"
+        android:icon="@drawable/ic_change_span_count"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item android:id="@+id/menuChoose"
+        android:title="@string/multiSelect"
+        app:showAsAction="never"/>
+    <item android:id="@+id/album_delete_all"
+        android:title="모두 삭제"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu_restore_all"
+        android:title="모두 복구" />
+</menu>

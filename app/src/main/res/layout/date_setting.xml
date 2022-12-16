@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:id="@+id/gridLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:id="@+id/lblFromDate"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:autoText="false"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="6"
+            android:id="@+id/txtFromDate"
+            android:hint="Tap to select"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: "
+            android:id="@+id/lblToDate"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="6"
+            android:id="@+id/txtToDate"
+            android:hint="Tap to select"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:focusableInTouchMode="false" />
+
+        <Button
+            android:text="결과"
+            android:id="@+id/btnResult"
+            android:layout_columnSpan="3"
+            android:layout_row="3"
+            android:layout_gravity="fill_horizontal" />
+
+    </GridLayout>
+
+
+
+
+</RelativeLayout>

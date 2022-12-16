@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testgallery"
+    tools:ignore="ExtraText">
+    adb shell install -g PATH_TO_APK_FILE
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- permission for internet -->
+    <uses-permission android:name="android.permission.INTERNET"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".activities.mainActivities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_cuplogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_cuplogo"
+        android:supportsRtl="true"
+        android:configChanges="locale"
+
+
+        android:theme="@style/Theme.TestGallery">
+        <activity
+            android:name=".activities.mainActivities.TrashPictureActivity"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ica" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="label" />
+
+        <activity
+            android:name=".activities.subActivities.GifShowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.subActivities.MultiSelectImage"
+            android:exported="true" />
+        <activity
+            android:name=".activities.subActivities.ItemSecretMultiSelectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.subActivities.ItemAlbumMultiSelectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.mainActivities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.mainActivities.SettingsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mainActivities.AddImageToAlbumActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mainActivities.ItemAlbumActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mainActivities.SlideShowActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mainActivities.PictureActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mainActivities.CreateAlbumActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mainActivities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Material.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".activities.mainActivities.WorldCUPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.mainActivities.WorldCUPActivity_result"
+            android:exported="true" />
+        <activity
+            android:name=".activities.mainActivities.ItemTrashCanActivity"
+            android:exported="true" />
+        <activity android:name=".activities.mainActivities.WC_longClick"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".activities.mainActivities.WC_HelpExample"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".activities.subActivities.ItemTrashCanMultiSelectActivity"
+            android:exported="false" />
+        <!-- 팝업 Activity -->
+        <activity android:name=".activities.mainActivities.ScreenshotPopupActivity"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name=".activities.mainActivities.WC_result_PictureActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

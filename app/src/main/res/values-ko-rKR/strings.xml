@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clean Up Picture</string>
+    <string name="picture">사진</string>
+    <string name="search">검색</string>
+    <string name="share">공유</string>
+    <string name="gallery">갤러리</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="slideshow">슬라이드 쇼</string>
+    <string name="add">추가</string>
+    <string name="delete">삭제</string>
+    <string name="information">정보</string>
+    <string name="hide_photo">사진 숨기기/표시</string>
+    <string name="photo">사진</string>
+    <string name="album">앨범</string>
+    <string name="search_photo">이사모</string>
+    <string name="screenshot">스크린샷</string>
+    <string name="change_password">비밀번호 변경</string>
+    <string name="delete_secret_album">비밀 앨범 삭제</string>
+    <string name="advance_search">고급 검색</string>
+    <string name="camera">카메라</string>
+    <string name="edit_photo">사진 편집</string>
+    <string name="add_to_favorite">좋아하는 사진 추가</string>
+    <string name="anti_clockspin_transformation" translatable="false">ANTI CLOCKSPIN TRANSFORMATION</string>
+    <string name="zoom_out_transformation" translatable="false">ZOOM OUT TRANSFORMATION</string>
+    <string name="depth_transformation" translatable="false">DEPTH TRANSFORMATION</string>
+    <string name="settings">설정</string>
+    <string name="set_wallpaper">배경 화면 설정</string>
+    <string name="multi_create_album">앨범 생성</string>
+    <string name="choose">선택</string>
+    <string name="addAlbum">앨범으로 추가</string>
+    <string name="multiSelect">다중 선택</string>
+    <string name="add_image">이미지 추가</string>
+    <string name="move_image">사진 이동</string>
+    <string name="restore">복구</string>
+    <string name="create_album">비밀 앨범</string>
+    <string name="gif">Gif 만들기</string>
+    <string name="listGif">GIF</string>
+    <string name="add_title">제목 추가</string>
+    <string name="enter_your_password">비밀번호를 입력하세요</string>
+    <string name="enter">입력</string>
+    <string name="create_password">비밀번호 생성</string>
+    <string name="question_for_getting_back_password">비밀번호 찾기 질문입니다.</string>
+    <string name="write_your_question">질문을 작성하세요</string>
+    <string name="your_answer_for_the_question_above">위 질문에 대한 귀하의 답변</string>
+    <string name="create">생성</string>
+    <string name="old_password">기존 비밀번호</string>
+    <string name="new_password">새 비밀번호</string>
+    <string name="question">질문</string>
+    <string name="your_answer">귀하의 답변</string>
+    <string name="confirm">확인하다</string>
+    <string name="exif_data">Exif 데이터</string>
+    <string name="unkown">불명</string>
+    <string name="name">이름</string>
+    <string name="producer">생산자</string>
+    <string name="model">모델</string>
+    <string name="size">크기</string>
+    <string name="focal_length">초점 거리</string>
+    <string name="flash">Flash</string>
+    <string name="author">작가</string>
+    <string name="confirm_password">너의 비밀번호를 확인</string>
+    <string name="unknown">알려지지 않은</string>
+    <string name="forgot_password">비밀번호 잃음</string>
+    <string name="duplicate_images">중복 이미지</string>
+    <string name="search_results">검색 결과</string>
+    <string name="insert_to_search">검색에 삽입</string>
+    <string name="night_mode">야간 모드</string>
+    <string name="night_mode_activated"> 야간 모드 활성화</string>
+    <string name="night_mode_deactivated"> 야간 모드 비활성화</string>
+    <string name="languague">언어</string>
+    <string name="vietnamese">베트남어</string>
+    <string name="english">영어</string>
+    <string name="source_code">소스 코드</string>
+    <string name="contributors">기여자</string>
+    <string name="libraries">포함된 라이브러리</string>
+    <string name="favorite">trashcan</string>
+
+</resources>
